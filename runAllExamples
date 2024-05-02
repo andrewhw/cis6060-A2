@@ -1,0 +1,39 @@
+#!/bin/sh
+
+#
+# Run each of the examples in turn
+#
+
+echo "Running Test/Train Examples:"
+
+echo "Abalone:"
+EXE="./tools/runpipe_abalone_test_train.sh"
+echo ". ${EXE}"
+echo ${EXE} | sh
+
+echo "Cancer Gene Expression:"
+EXE="./tools/runpipe_cancer_test_train.sh"
+echo ". ${EXE}"
+echo ${EXE} | sh
+
+echo ""
+echo ""
+
+
+
+echo "Running Cross-Validation Examples:"
+
+echo "Abalone:"
+EXE="./tools/runpipe_abalone_5_fold.sh"
+echo ". ${EXE}"
+echo ${EXE} | sh
+
+echo "Cancer Gene Expression:"
+EXE="./tools/runpipe_cancer_5_fold.sh"
+echo ". ${EXE}"
+echo ${EXE} | sh
+
+echo ""
+echo ""
+echo "Done running examples"
+echo ""
