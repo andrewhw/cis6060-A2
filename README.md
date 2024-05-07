@@ -110,7 +110,8 @@ have to do "dimensionality reduction" on this data -- see PCA below.
 
 There are tools provided for you to run an analysis
 of both the *Abalone* and *Cancer by Gene Expression* data sets, and
-a simple training/testing split of the data in *Cancer by Gene Expression*
+divide the data up for each data set to allow for training and testing
+using either cross validation or a simple split.
 
 These are provided in files for "train-vs-test" runs and "cross-validation":
 	
@@ -169,10 +170,10 @@ These are provided in files for "train-vs-test" runs and "cross-validation":
 	to be used to compare performances between algorithms (more below)
 
 	* `tools/runpipe_abalone_5_fold.sh` :
-			run a cross validation pipeline on the *Cancer* data
+			run a cross validation pipeline on the *Abalone* data
 
 	* `tools/runpipe_cancer_5_fold.sh` :
-			run a cross validation pipeline on the *Abalone* data
+			run a cross validation pipeline on the *Cancer* data
 
 	The result of running these pipelines will be placed in directories
 	named `abalone-folded-*` and `cancer-folded-*`.
