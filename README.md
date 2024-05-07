@@ -173,7 +173,7 @@ These are provided in files for "train-vs-test" runs and "cross-validation":
 			run a cross validation pipeline on the *Abalone* data
 
 	* `tools/runpipe_cancer_5_fold.sh` :
-			run a cross validation pipeline on the *Cancer* data
+			run a cross validation pipeline on the *Cancer By Gene Expression* data
 
 	The result of running these pipelines will be placed in directories
 	named `abalone-folded-*` and `cancer-folded-*`.
@@ -204,7 +204,7 @@ Each of these calls several python3 scripts to do the work.  These are:
 		difficult to interpret, it has several advantages:
 
 		* reduces the number of dimensions, allowing tables that are
-		wider than they are tall to be learned (as in the *Cancer* problem)
+		wider than they are tall to be learned (as in the *Cancer By Gene Expression* problem)
 
 		* reduces the number of dimensions, reducing the training time
 
