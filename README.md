@@ -5,7 +5,7 @@
 
 # License
 
-This work licensed under [Creative Commons Atribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+This work licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
 All content here is free to use if attribution is given.  Please see the license for details.
 
@@ -246,7 +246,7 @@ approach the following questions:
 	terms of accuracy for a given problem?
 
 	Approach this by calculating
-	a *paired $t$-test* of the performance measures for a pair of
+	a *paired* $t$-test of the performance measures for a pair of
 	classfiers.  As *exactly the same decisions* are being made for
 	data in the same fold by different classfiers, these values can be
 	paired together in this type of test.
