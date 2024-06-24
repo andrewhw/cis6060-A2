@@ -2,7 +2,6 @@
 # Cancer Gene Expression Data set from Kaggle
 
 This directory requires the "Cancer Gene Expression" data set from Kaggle.
-learning repository.
 
 ## Citation
 
