@@ -79,6 +79,9 @@ to see examples of this format.
 
 ## Abalone data set
 
+The citation for this data set is provided in the 
+[README.md](./src-data-abalone-UCI/README.md) file in the src subdirectory.
+
 The Abalone data set in `src-data-abalone-UCI` provides a
 relatively small example.  In this problem $X$ gives measures of
 a shellfish from Tasmania where the objective is to distinguish the
@@ -96,6 +99,9 @@ can be used to convert any of the
 datasets to this standard form.
 
 ## Cancer by Gene Expression
+
+The citation for this data set is provided in the 
+[README.md](./src-data-cancer-by-gene-expression/README.md) file in the src subdirectory.
 
 This data set in `src-data-cancer-by-gene-expression` provides a table
 where $X$ contains data for 7129 gene expressions (the columns of the table)
