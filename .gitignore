@@ -1,1 +1,5 @@
 .DS_Store
+abalone-folded-*
+abalone-train-vs-test
+cancer-folded-*
+cancer-train-vs-test
