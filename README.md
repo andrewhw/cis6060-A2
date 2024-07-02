@@ -268,6 +268,9 @@ approach the following questions:
 	each $p$-value by 3).  Some authors phrase this in terms of dividing your $\alpha$
 	by the number of comparisons -- the effect is the same.
 
+	A more full discussion on multiple comparisons is available from the
+	[US National Institute of Standards and Technology (NIST)](https://www.itl.nist.gov/div898/handbook/prc/section4/prc47.htm)
+
 * What do the best parameters chosen in validation based grid search
 	tell us about these problems?
 
