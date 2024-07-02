@@ -82,7 +82,7 @@ to see examples of this format.
 The citation for this data set is provided in the 
 [README.md](./src-data-abalone-UCI/README.md) file in the src subdirectory.
 
-The Abalone data set in `src-data-abalone-UCI` provides a
+The Abalone data set in [`src-data-abalone-UCI`](./src-data-abalone-UCI) provides a
 relatively small example.  In this problem $X$ gives measures of
 a shellfish from Tasmania where the objective is to distinguish the
 juveniles (class "I") from the adults (class "M" and "F") -- these
@@ -92,8 +92,8 @@ which in this problem is called "Sex".
 In the Abalone data set, the $X$ matrix has 4177 samples, and 7 columns.
 
 There is a script called
-`convert_data_to_standard_tabular_format.py`
-in the directory `src-data-abalone-UCI` that with very small adaptation
+[`convert_data_to_standard_tabular_format.py`](./convert_data_to_standard_tabular_format.py)
+in the directory [`src-data-abalone-UCI`](./src-data-abalone-UCI) that with very small adaptation
 can be used to convert any of the
 [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets)
 datasets to this standard form.
@@ -103,7 +103,7 @@ datasets to this standard form.
 The citation for this data set is provided in the 
 [README.md](./src-data-cancer-by-gene-expression/README.md) file in the src subdirectory.
 
-This data set in `src-data-cancer-by-gene-expression` provides a table
+This data set in [`src-data-cancer-by-gene-expression`](./src-data-cancer-by-gene-expression) provides a table
 where $X$ contains data for 7129 gene expressions (the columns of the table)
 as collected from 72 patients.  The $y$ label values from this problem
 come from the column called "cancer".
@@ -155,7 +155,7 @@ These are provided in files for "train-vs-test" runs and "cross-validation":
 		Training the system on this gives us a single estimate of how well
 		the system was able to learn the problem.
 
-	* `tools/runpipe_cancer_test_train.sh` :
+	* [`tools/runpipe_cancer_test_train.sh`](./tools/runpipe_cancer_test_train.sh) :
 		This pipeline performs the same "train -vs- test"
 		analysis as the previous example, but on the *Cancer*
 		data.  As the *Cancer* data has so few rows relative to
@@ -166,7 +166,7 @@ These are provided in files for "train-vs-test" runs and "cross-validation":
 		runs *considerably faster* than the *Abalone* problem.
 
 	The result of running these pipelines will be placed in directories
-	named `abalone-train-vs-test` and `cancer-train-vs-test`.
+	named [`abalone-train-vs-test`](./abalone-train-vs-test) and [`cancer-train-vs-test`](./cancer-train-vs-test).
 
 * cross validation runs:.
 	The tools below run a full 5-fold cross validation analysis on
@@ -175,10 +175,10 @@ These are provided in files for "train-vs-test" runs and "cross-validation":
 	in the performance to be calculated, and also a paired $t$-test
 	to be used to compare performances between algorithms (more below)
 
-	* `tools/runpipe_abalone_5_fold.sh` :
+	* [`tools/runpipe_abalone_5_fold.sh`](./tools/runpipe_abalone_5_fold.sh) :
 			run a cross validation pipeline on the *Abalone* data
 
-	* `tools/runpipe_cancer_5_fold.sh` :
+	* [`tools/runpipe_cancer_5_fold.sh`](./tools/runpipe_cancer_5_fold.sh) :
 			run a cross validation pipeline on the *Cancer By Gene Expression* data
 
 	The result of running these pipelines will be placed in directories
@@ -189,12 +189,12 @@ These are provided in files for "train-vs-test" runs and "cross-validation":
 
 Each of these calls several python3 scripts to do the work.  These are:
 
-* `tools/create_test_train_split.py` and `tools/create_folds.py` :
+* [`tools/create_test_train_split.py`](./tools/create_test_train_split.py) and [`tools/create_folds.py`](./tools/create_folds.py) :
 	These scripts divide up the rows of the provided $X$ and $y$ values
 	into independent sets of samples, ensuring that the resulting sets
 	are "stratified" according to the labels in $y$.
 
-* `tools/calculate_data_projection.py` : this takes the data for a
+* [`tools/calculate_data_projection.py`](./tools/calculate_data_projection.py) : this takes the data for a
 	particular analysis as produced by one of the previous scripts,
 	and projects it into a standardized space.  There are two steps
 	to this:
@@ -217,14 +217,14 @@ Each of these calls several python3 scripts to do the work.  These are:
 		* allows two-dimensional plots to be made of the two
 		"most important" dimensions
 
-* `tools/evaluate_svn.py` : this script trains and provides analysis of
+* [`tools/evaluate_svn.py`](./tools/evaluate_svn.py) : this script trains and provides analysis of
 	the ability to learn a data problem using the popular
 	"Support Vector Machine Classifier" algorithm.  While most people
 	refer to this as an "SVM", scikit-learn calls this an "SVC".  It is
 	the same thing.
 
 ***To add another algorithm, I suggest copying
-`tools/evaluate_svn.py` as a starting place,
+[`tools/evaluate_svn.py`](./tools/evaluate_svn.py) as a starting place,
 and then adding your new script to each pipeline.***
 
 Note that the Logistic Regression tool in scikit-learn documentation
