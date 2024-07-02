@@ -166,7 +166,7 @@ These are provided in files for "train-vs-test" runs and "cross-validation":
 		runs *considerably faster* than the *Abalone* problem.
 
 	The result of running these pipelines will be placed in directories
-	named [`abalone-train-vs-test`](./abalone-train-vs-test) and [`cancer-train-vs-test`](./cancer-train-vs-test).
+	named `abalone-train-vs-test` and `cancer-train-vs-test`.
 
 * cross validation runs:.
 	The tools below run a full 5-fold cross validation analysis on
@@ -189,15 +189,16 @@ These are provided in files for "train-vs-test" runs and "cross-validation":
 
 Each of these calls several python3 scripts to do the work.  These are:
 
-* [`tools/create_test_train_split.py`](./tools/create_test_train_split.py) and [`tools/create_folds.py`](./tools/create_folds.py) :
+* [`tools/create_test_train_split.py`](./tools/create_test_train_split.py)
+	and [`tools/create_folds.py`](./tools/create_folds.py) :
 	These scripts divide up the rows of the provided $X$ and $y$ values
 	into independent sets of samples, ensuring that the resulting sets
 	are "stratified" according to the labels in $y$.
 
-* [`tools/calculate_data_projection.py`](./tools/calculate_data_projection.py) : this takes the data for a
-	particular analysis as produced by one of the previous scripts,
-	and projects it into a standardized space.  There are two steps
-	to this:
+* [`tools/calculate_data_projection.py`](./tools/calculate_data_projection.py) :
+	this takes the data for a particular analysis as produced by one of
+	the previous scripts, and projects it into a standardized space.
+	There are two steps to this:
 
 	* individually scale the values in each of the columns in $X$
 		so that the have zero mean and unit standard deviation based
@@ -210,18 +211,19 @@ Each of these calls several python3 scripts to do the work.  These are:
 		difficult to interpret, it has several advantages:
 
 		* reduces the number of dimensions, allowing tables that are
-		wider than they are tall to be learned (as in the *Cancer By Gene Expression* problem)
+		wider than they are tall to be learned
+		(as in the *Cancer By Gene Expression* problem)
 
 		* reduces the number of dimensions, reducing the training time
 
 		* allows two-dimensional plots to be made of the two
 		"most important" dimensions
 
-* [`tools/evaluate_svn.py`](./tools/evaluate_svn.py) : this script trains and provides analysis of
-	the ability to learn a data problem using the popular
-	"Support Vector Machine Classifier" algorithm.  While most people
-	refer to this as an "SVM", scikit-learn calls this an "SVC".  It is
-	the same thing.
+* [`tools/evaluate_svn.py`](./tools/evaluate_svn.py) :
+	this script trains and provides analysis of the ability to learn a
+	data problem using the popular "Support Vector Machine Classifier" algorithm.
+	While most people refer to this as an "SVM", scikit-learn calls this an "SVC".
+	It is the same thing.
 
 ***To add another algorithm, I suggest copying
 [`tools/evaluate_svn.py`](./tools/evaluate_svn.py) as a starting place,
