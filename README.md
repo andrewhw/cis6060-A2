@@ -259,6 +259,15 @@ approach the following questions:
 	data in the same fold by different classfiers, these values can be
 	paired together in this type of test.
 
+	Note that if you compare *three or more* classifiers using multiple
+	applications of the *paired* $t$-test, you will need to perform
+	a [Bonferroni Correction](https://mathworld.wolfram.com/BonferroniCorrection.html)
+	which essentially consists of multiplying your $p$-values by the number
+	of multiple comparisons (*i.e.;* if you compare three classifiers, A, B, and C,
+	then you are comparing A:B, A:C and B:C for three comparisons, so you multiply
+	each $p$-value by 3).  Some authors phrase this in terms of dividing your $\alpha$
+	by the number of comparisons -- the effect is the same.
+
 * What do the best parameters chosen in validation based grid search
 	tell us about these problems?
 
