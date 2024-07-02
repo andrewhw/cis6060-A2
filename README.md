@@ -37,7 +37,7 @@ install lines to use if you are using
 
 For this assignment, we wish to do three things:
 
-1)	we want to extend out machine-learning pipeline possibilities with
+1)	we want to extend our machine-learning pipeline possibilities with
 	another data set
 2)	we want to extend a "support vector machine" machine-learning pipeline
 	to also attempt the use of "logistic regression"
@@ -123,7 +123,7 @@ These are provided in files for "train-vs-test" runs and "cross-validation":
 	
 * train -vs- test runs:
 
-	* `tools/runpipe_abalone_test_train.sh` :
+	* [`tools/runpipe_abalone_test_train.sh`](./tools/runpipe_abalone_test_train.sh) :
 		This is the simplest pipeline.  It divides the data
 		provided in the data set up into a portion for
 		testing and separate portions for training and
