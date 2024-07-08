@@ -6,7 +6,7 @@ learning repository.
 
 ## Citation
 
-J Nash, W.; Sellers, T. L.; Talbot, S. R.; Cawthorn, A. J. & Ford, W. B.
+Nash, W. J.; Sellers, T. L.; Talbot, S. R.; Cawthorn, A. J. & Ford, W. B.
 "Abalone Data Set"
 in 
 Dua, D. & Graff, C.
