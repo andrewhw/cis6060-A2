@@ -35,13 +35,13 @@ argparser.add_argument("-s", "--seed", action="store",
 			"random values")
 argparser.add_argument("-c", "--classes", action="store", default=None,
 		help="A comma-separated list of class names to report in "
-			"evalulation metrics.  If not supplied, class names "
+			"evaluation metrics.  If not supplied, class names "
 			"based on integer numbers starting at zero will be used.")
 argparser.add_argument("-f", "--fig", action="store_true",
 		help="Stores the confusion matrix in a PDF figure")
 argparser.add_argument("dirname",
 		type=pathlib.Path,
-		help="Sets the data directory -- alterate to -I")
+		help="Sets the data directory -- alternate to -I")
 
 args = argparser.parse_args(sys.argv[1:])
 

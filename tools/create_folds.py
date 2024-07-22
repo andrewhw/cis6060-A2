@@ -98,7 +98,7 @@ elif LABEL not in labelled_data.columns:
 ##
 
 
-# Set up a strafitier for the correct number of folds
+# Set up a stratifier for the correct number of folds
 # (Note that this step knows nothing about the data, yet)
 k_folds = StratifiedKFold(n_splits=N_FOLDS)
 

@@ -76,7 +76,7 @@ def calculate_PCA_projection( \
 					k_PCA_sufficient, X_n_cols))
 
 
-	# Using only k_PCA_sufficent components, re-fit the data
+	# Using only k_PCA_sufficient components, re-fit the data
 	# (producing the same fit) but now transforming to the lower
 	# k_PCA_sufficient dimensional space
 	pca = PCA(n_components = k_PCA_sufficient)
@@ -202,7 +202,7 @@ argparser.add_argument("-d", "--display", action="store_true",
 			"closed.")
 argparser.add_argument("dirname",
 		type=pathlib.Path,
-		help="Sets the data directory -- alterate to -I")
+		help="Sets the data directory -- alternate to -I")
 
 args = argparser.parse_args(sys.argv[1:])
 
@@ -228,7 +228,7 @@ DATA_DIRNAME=args.dirname
 
 
 ###
-### Procesing starts here
+### Processing starts here
 ###
 
 print(" . Loading....")
