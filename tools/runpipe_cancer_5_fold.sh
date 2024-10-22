@@ -20,20 +20,20 @@ SCRIPTDIR=`dirname $0`
 set -x 
 
 # create the "folds"
-python ${SCRIPTDIR}/create_folds.py \
+python3 ${SCRIPTDIR}/create_folds.py \
         --tag "cancer" -l "cancer" 5 \
-        src-data-cancer-by-gene-expression/cancer-by-gene-expression.csv
+        data-cancer-by-gene-expression/cancer-by-gene-expression.csv
 
 for fold in 00 01 02 03 04
 do
     echo " = Experimental Fold ${fold}"
 
     # calculate the projection for each fold
-    python ${SCRIPTDIR}/calculate_data_projection.py \
+    python3 ${SCRIPTDIR}/calculate_data_projection.py \
             --PCA --fig "cancer-folded-${fold}"
 
     # run SVN on the fold
-    python ${SCRIPTDIR}/evaluate_svn.py --fig "cancer-folded-${fold}"
+    python3 ${SCRIPTDIR}/evaluate_svn.py --fig "cancer-folded-${fold}"
 
     # leave two blank lines between folds
     echo "\n"

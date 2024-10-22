@@ -80,9 +80,9 @@ to see examples of this format.
 ## Abalone data set
 
 The citation for this data set is provided in the 
-[README.md](./src-data-abalone-UCI/README.md) file in the src subdirectory.
+[README.md](./data-abalone-UCI/README.md) file in the src subdirectory.
 
-The Abalone data set in [`src-data-abalone-UCI`](./src-data-abalone-UCI) provides a
+The Abalone data set in [`data-abalone-UCI`](./data-abalone-UCI) provides a
 relatively small example.  In this problem $X$ gives measures of
 a shellfish from Tasmania where the objective is to distinguish the
 juveniles (class "I") from the adults (class "M" and "F") -- these
@@ -93,7 +93,7 @@ In the Abalone data set, the $X$ matrix has 4177 samples, and 7 columns.
 
 There is a script called
 [`convert_data_to_standard_tabular_format.py`](./convert_data_to_standard_tabular_format.py)
-in the directory [`src-data-abalone-UCI`](./src-data-abalone-UCI) that with very small adaptation
+in the directory [`data-abalone-UCI`](./data-abalone-UCI) that with very small adaptation
 can be used to convert any of the
 [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets)
 datasets to this standard form.
@@ -101,9 +101,9 @@ datasets to this standard form.
 ## Cancer by Gene Expression
 
 The citation for this data set is provided in the 
-[README.md](./src-data-cancer-by-gene-expression/README.md) file in the src subdirectory.
+[README.md](./data-cancer-by-gene-expression/README.md) file in the src subdirectory.
 
-This data set in [`src-data-cancer-by-gene-expression`](./src-data-cancer-by-gene-expression) provides a table
+This data set in [`data-cancer-by-gene-expression`](./data-cancer-by-gene-expression) provides a table
 where $X$ contains data for 7129 gene expressions (the columns of the table)
 as collected from 72 patients.  The $y$ label values from this problem
 come from the column called "cancer".

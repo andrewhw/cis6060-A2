@@ -1,7 +1,7 @@
 
 # Cancer Gene Expression Data set from Kaggle
 
-This directory requires the "Cancer Gene Expression" data set from Kaggle.
+This directory contains the "Cancer Gene Expression" data set reproduced from Kaggle.
 
 ## Citation
 

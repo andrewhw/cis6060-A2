@@ -20,17 +20,17 @@ SCRIPTDIR=`dirname $0`
 set -x 
 
 # create the "folds"
-python ${SCRIPTDIR}/create_folds.py --tag "abalone" -l Sex 5 src-data-abalone-UCI/abalone.csv
+python3 ${SCRIPTDIR}/create_folds.py --tag "abalone" -l Sex 5 data-abalone-UCI/abalone.csv
 
 for fold in 00 01 02 03 04
 do
     echo " = Experimental Fold ${fold}"
 
     # calculate the projection for each fold
-    python ${SCRIPTDIR}/calculate_data_projection.py "abalone-folded-${fold}"
+    python3 ${SCRIPTDIR}/calculate_data_projection.py "abalone-folded-${fold}"
 
     # run SVN on the fold
-    python ${SCRIPTDIR}/evaluate_svn.py --classes "I,M,F" --fig "abalone-folded-${fold}"
+    python3 ${SCRIPTDIR}/evaluate_svn.py --classes "I,M,F" --fig "abalone-folded-${fold}"
 
     # leave two blank lines between folds
     echo "\n"

@@ -20,14 +20,14 @@ SCRIPTDIR=`dirname $0`
 set -x 
 
 # split the data
-python ${SCRIPTDIR}/create_test_train_split.py \
+python3 ${SCRIPTDIR}/create_test_train_split.py \
         --tag "cancer" -l "cancer" \
-        src-data-cancer-by-gene-expression/cancer-by-gene-expression.csv
+        data-cancer-by-gene-expression/cancer-by-gene-expression.csv
 
 # calculate the projection for this split
-python ${SCRIPTDIR}/calculate_data_projection.py \
+python3 ${SCRIPTDIR}/calculate_data_projection.py \
 		--PCA --fig "cancer-train-vs-test"
 
 # run SVN on the datea
-python ${SCRIPTDIR}/evaluate_svn.py --fig "cancer-train-vs-test"
+python3 ${SCRIPTDIR}/evaluate_svn.py --fig "cancer-train-vs-test"
 
