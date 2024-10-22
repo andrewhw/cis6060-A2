@@ -1,5 +1,5 @@
 
-# CIS6060/Bioinformatics : W21 : Assignment 2 : Simple Pipeline
+# CIS6060/Bioinformatics (W21) -- Assignment 2 : Simple Pipeline
 
 *This is an assignment I gave out while teaching the CIS 6060 course in Winter 2021 at the [University of Guelph](https://www.uoguelph.ca) [School of Computer Science](https://socs.uoguelph.ca).  It will give you an overview of how to set up a simple machine learning data analysis pipeline and provide you a starting place for similar work.*
 
