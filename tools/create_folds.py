@@ -116,7 +116,7 @@ for train_and_validate_indices, test_indices in k_folds.split(X,y):
 
 	## At this point, we have a chunk of 1/N_FOLDS of the data
 	## set aside for testing, however the remaining data is
-	## required not only for testing, but if we are going to
+	## required not only for training, but if we are going to
 	## do any parameter tuning or other validation, we need
 	## to further divide this data up so that we have independent
 	## estimates of the data distribution for training, validation
